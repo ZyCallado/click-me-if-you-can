@@ -12,7 +12,7 @@
 
   <main id="app" class="app">
     <header>
-      <h1 id="title"><span>Catch me</span> <span class="o">if you can.</span></h1>
+      <h1 id="title"><span>Click me</span> <span class="o">if you can.</span></h1>
       <p class="sub">Just a button.</p>
     </header>
 
@@ -21,6 +21,10 @@
         <div hidden><dt>Escapes</dt><dd><output id="dodges">0</output></dd></div>
         <div><dt>Time wasted</dt><dd><output id="time">00:00</output></dd></div>
       </dl>
+      <div class="meter">
+        <div class="meter-top" hidden><span>Dignity lost</span><span id="pct">0%</span></div>
+        <div class="bar" id="bar" role="progressbar" aria-label="Dignity lost" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" hidden><i id="fill"></i></div>
+      </div>
     </section>
 
     <p id="quip" class="quip" aria-live="polite">Go on. Click it. It's just a button. What could go wrong?</p>
