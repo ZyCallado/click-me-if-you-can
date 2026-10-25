@@ -44,14 +44,14 @@
     'Accuracy: NaN. Even the calculator gave up.', 'Accuracy: 0%. Rounded up out of pity.'];
   const ACHIEVEMENTS = [
     [1, 'First Blood', 'You missed. Savor it.'],
-    [10, 'Persistent Little Goblin', '10 clicks. Adorable.'],
-    [25, 'Professional Miss-er', '25 clicks. Frame the certificate.'],
-    [50, 'Touch Grass', '50 clicks. The sun misses you.'],
-    [100, 'You Need Help', '100 clicks. We are concerned.'],
+    [10, 'Persistent Little Goblin', '10 misses. Adorable.'],
+    [25, 'Professional Miss-er', '25 misses. Frame the certificate.'],
+    [50, 'Touch Grass', '50 misses. The sun misses you.'],
+    [100, 'You Need Help', '100 misses. We are concerned.'],
   ];
   const ENDINGS = [
     [0, 'You gave up without a single miss. The button is flattered and offended.'],
-    [5, 'So few clicks. The button has not even warmed up.'],
+    [5, 'So few misses. The button has not even warmed up.'],
     [15, 'The button is not sweating. You, however, look tired.'],
     [30, 'Your mouse has requested a transfer.'],
     [60, 'Your ancestors are still disappointed. Now with data.'],
