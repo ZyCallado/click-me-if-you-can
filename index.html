@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Click Me If You Can</title>
+  <meta name="description" content="One button. Zero cooperation.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-stage="1">
+  <div class="bg" aria-hidden="true"></div>
+
+  <main id="app" class="app">
+    <header>
+      <h1 id="title"><span>Catch me</span> <span class="o">if you can.</span></h1>
+      <p class="sub">Just a button.</p>
+    </header>
+
+    <section class="hud" aria-label="Game stats">
+      <dl class="stats">
+        <div hidden><dt>Escapes</dt><dd><output id="dodges">0</output></dd></div>
+        <div><dt>Time wasted</dt><dd><output id="time">00:00</output></dd></div>
+      </dl>
+    </section>
+
+    <p id="quip" class="quip" aria-live="polite">Go on. Click it. It's just a button. What could go wrong?</p>
+
+    <div id="loader" class="loader" hidden>
+      <p id="loaderText" aria-live="polite"></p>
+      <div class="bar"><i id="loaderFill"></i></div>
+    </div>
+
+    <section id="arena" class="arena" aria-label="Play area">
+      <button id="target" class="target" type="button" tabindex="-1" aria-hidden="true">Click Me</button>
+    </section>
+
+    <div class="actions">
+      <button id="giveup" class="giveup" type="button">I Give Up</button>
+    </div>
+
+    <footer>Made with absolutely no respect for your time.</footer>
+  </main>
+
+  <div id="toasts" class="stack toasts" aria-live="polite"></div>
+  <div id="notifs" class="stack notifs" aria-live="polite"></div>
+
+  <section id="end" class="end" role="dialog" aria-modal="true" aria-labelledby="endTitle" hidden>
+    <div class="end-card">
+      <p class="trophy" aria-hidden="true">🏆</p>
+      <h2 id="endTitle">The Button Wins</h2>
+      <p id="endMsg" class="end-msg"></p>
+      <p id="endStats" class="end-stats"></p>
+      <button id="again" class="again" type="button">Play Again</button>
+    </div>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
