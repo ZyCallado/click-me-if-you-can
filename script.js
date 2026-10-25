@@ -32,7 +32,7 @@
   const QUIPS = {
     1: ['Oops!', 'Try again!', "You're getting close!"],
     2: ['Are you using a trackpad?', 'That was embarrassing.', 'My grandma clicks faster.', 'Take your time. Not that it will help.'],
-    3: [(n) => `You have missed ${n} times. Reflect on that.`, 'Bro is fighting a rectangle.', 'Your ancestors are disappointed.',
+    3: [(n) => `You have missed ${n} times. Reflect on that.`, 'Bro is fighting a button.', 'Your ancestors are disappointed.',
       'Even the loading spinner has given up on you.'],
     4: ['The button has entered its villain arc.', 'Somewhere, a trackpad weeps.', 'Statistically, this should have worked by now.',
       'Have you tried wanting it less?', 'This is now a documentary about your cursor.', 'Please blink twice if your hand is being held hostage.',
