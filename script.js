@@ -283,7 +283,7 @@
     el.loader.hidden = true;
     const n = state.dodges;
     el.endMsg.textContent = ENDINGS.find(([max]) => n <= max)[1];
-    el.endStats.textContent = `${n} clicks, ${fmtTime(elapsed())} wasted.`;
+    el.endStats.textContent = `${n} misses, ${fmtTime(elapsed())} wasted.`;
     el.end.hidden = false;
     el.app.inert = true;
     el.again.focus();
